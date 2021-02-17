@@ -99,7 +99,7 @@ Content-Length: 9
 Success!
 ```
 
-### Generate graph [needs refactoring for better visualization]
+### Generate graph [to visualize dependency]
 
 ```
 ➜ terraform graph -draw-cycles  | dot -Tsvg -o  graph.svg
@@ -110,7 +110,7 @@ Success!
 ### Cleanup
 
 ```
-➜ terraform destroy -var 'server_port=8080'
+➜ terraform destroy
 [Lines removed for brevity]
 
 An execution plan has been generated and is shown below.
